@@ -1,0 +1,87 @@
+module testbench();
+
+timeunit 10ns;
+
+timeprecision 1ns;
+
+
+
+logic [9:0] SW;
+logic Clk, Run, Continue;
+logic [9:0] LED;
+logic [6:0] HEX0, HEX1, HEX2, HEX3;
+
+
+slc3_testtop slc3_testtop0(.*);
+
+logic [15:0] IR;
+assign IR = slc3_testtop0.slc.IR;
+logic [15:0] MAR;
+assign MAR = slc3_testtop0.slc.MAR;
+logic [15:0] MDR;
+assign MDR = slc3_testtop0.slc.MDR;
+logic [15:0] PC;
+assign PC = slc3_testtop0.slc.PC;
+logic [15:0] BUS;
+assign BUS = slc3_testtop0.slc.BUS;
+logic [15:0] MDR_In;
+assign MDR_In = slc3_testtop0.slc.MDR_In;
+logic [15:0] MDR_Input;
+assign MDR_Input = slc3_testtop0.slc.MDR_Input;
+
+logic [4:0] state;
+assign state = slc3_testtop0.slc.state_controller.State;
+
+always begin : CLOCK_GENERATION
+
+#1 Clk = ~Clk;
+end
+
+initial begin : CLOCK_INITIALIZATION
+
+   Clk = 0;
+	
+	end
+	
+initial begin : TEST_VECTORS
+
+
+Continue = 1;
+Run = 1;
+	   
+#2 Continue = 0;
+    Run = 0;
+	 
+#2 Continue = 1;
+   Run = 1;
+
+#2 Run = 0;
+#2 Run = 1;
+
+#2 Continue = 0;
+#2 Continue = 1;
+#20 Continue = 0;
+#2 Continue = 1;
+#20 Continue = 0;
+#2 Continue = 1;
+#20 Continue = 0;
+#2 Continue = 1;
+
+end 
+endmodule
+
+	
+	
+	
+	
+
+
+
+
+
+
+  
+
+
+
+

@@ -1,0 +1,58 @@
+module ben
+(
+input logic [15:0] D,
+input logic LD1, LD2, Clk, Reset,
+input logic [2:0] IR_Input,
+output logic BEN_OUT
+);
+
+logic n, z, p;
+logic n_out, z_out, p_out;
+
+always_ff @(posedge Clk) 
+begin
+if(Reset)
+BEN_OUT <= 1'b0;
+
+else if(LD2)
+BEN_OUT <= ((IR_Input & {n_out, z_out, p_out}) != 3'b000);
+
+if(LD1) 
+begin
+n_out <= n;
+z_out <= z;
+p_out <= p;
+end 
+end 
+	
+	
+always_comb 
+begin
+if(D == 16'h0000) 
+begin
+n = 1'b0;
+z = 1'b1;
+p = 1'b0;
+end 
+		
+else if(D[15] == 1'b1) 
+begin
+n = 1'b1;
+z = 1'b0;
+p = 1'b0;
+end 
+
+else if(D[15] == 1'b0) 
+begin
+n = 1'b0;
+z = 1'b0;
+p = 1'b1;
+end 
+		
+else begin
+n = 1'b1;
+z = 1'b0;
+p = 1'b0;
+end 
+end 
+endmodule 

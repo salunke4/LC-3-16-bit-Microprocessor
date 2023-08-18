@@ -1,0 +1,20 @@
+module alu 
+(
+input logic [15:0] inputA,
+input logic [15:0] inputB,
+input logic [1:0] aluk,
+output logic [15:0] output
+);
+
+always_comb begin
+unique case(aluk)
+
+2'b00: output = inputA + inputB;
+2'b01: output = inputA & inputB;
+2'b10: output = ~inputA;
+2'b11: output = inputA;
+
+endcase
+end
+
+endmodule
