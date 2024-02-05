@@ -1,22 +1,3 @@
-//------------------------------------------------------------------------------
-// Company: 		 UIUC ECE Dept.
-// Engineer:		 Stephen Kempf
-//
-// Create Date:    
-// Design Name:    ECE 385 Lab 5 Given Code - SLC-3 top-level (Physical RAM)
-// Module Name:    SLC3
-//
-// Comments:
-//    Revised 03-22-2007
-//    Spring 2007 Distribution
-//    Revised 07-26-2013
-//    Spring 2015 Distribution
-//    Revised 09-22-2015 
-//    Revised 06-09-2020
-//	  Revised 03-02-2021
-//------------------------------------------------------------------------------
-
-
 module slc3(
 	input logic [9:0] SW,
 	input logic	Clk, Reset, Run, Continue,
