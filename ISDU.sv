@@ -1,21 +1,3 @@
-//------------------------------------------------------------------------------
-// Company:          UIUC ECE Dept.
-// Engineer:         Stephen Kempf
-//
-// Create Date:    17:44:03 10/08/06
-// Design Name:    ECE 385 Lab 6 Given Code - Incomplete ISDU
-// Module Name:    ISDU - Behavioral
-//
-// Comments:
-//    Revised 03-22-2007
-//    Spring 2007 Distribution
-//    Revised 07-26-2013
-//    Spring 2015 Distribution
-//    Revised 02-13-2017
-//    Spring 2017 Distribution
-//------------------------------------------------------------------------------
-
-
 module ISDU (   input logic         Clk, 
 									Reset,
 									Run,
