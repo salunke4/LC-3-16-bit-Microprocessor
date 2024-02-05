@@ -1,23 +1,3 @@
-//-------------------------------------------------------------------------
-//      SLC3_2.sv                                                        --
-//      Stephen Kempf                                                    --
-//      Created  Spring 2006                                             --
-//      Revised  3-22-2007                                               --
-//              10-22-2013                                               --
-//              03-04-2014                                               --
-//              04-25-2017 by Po-Han Huang for additional comments       --
-//                                                                       --
-//      Fall 2017 Distribution                                           --
-//                                                                       --
-//      For use with ECE 385 Lab 8 (Test_Memory)                         --
-//      UIUC ECE Department                                              --
-//-------------------------------------------------------------------------
-// TO USE: Include this file in your project, and paste the following 2 lines
-//   (uncommented) into whatever file needs to reference the functions &
-//   constants included in this file, just after the usual library references:
-//`include "SLC3_2.sv"
-//import SLC3_2::*;
-
 `ifndef _SLC3_2__SV 
 `define _SLC3_2__SV
 
