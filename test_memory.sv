@@ -1,28 +1,3 @@
-//-------------------------------------------------------------------------
-//      test_memory.vhd                                                  --
-//      Stephen Kempf                                                    --
-//      Summer 2005                                                      --
-//                                                                       --
-//      Revised 3-15-2006                                                --
-//              3-22-2007                                                --
-//              7-26-2013                                                --
-//                                                                       --
-//      For use with ECE 385 Experment 6                                 --
-//      UIUC ECE Department                                              --
-//-------------------------------------------------------------------------
-
-// This memory has similar behavior to the SRAM IC on the DE2 board.  This
-// file should be used for simulations only.  In simulation, this memory is
-// guaranteed to work at least as well as the actual memory (that is, the
-// actual memory may require more careful treatment than this test memory).
-
-// To use, you should create a seperate top-level entity for simulation
-// that connects this memory module to your computer.  You can create this
-// extra entity either in the same project (temporarily setting it to be the
-// top module) or in a new one, and create a new vector waveform file for it.
-
-
-
 module test_memory ( input Reset,
 							input	  Clk,
 							input	[15:0]  data,
