@@ -1,18 +1,3 @@
-//-------------------------------------------------------------------------
-//      memory_contents.sv                                               --
-//      The memory contents in the test memory.                          --
-//                                                                       --
-//      Originally contained in test_memory.sv                           --
-//      Revised 10-19-2017 by Anand Ramachandran and Po-Han Huang        --
-//      Revised 02-01-2018 by Yikuan Chen
-//                        spring 2018 Distribution                       --
-//                                                                       --
-//      For use with ECE 385 Experment 6                                 --
-//      UIUC ECE Department                                              --
-//-------------------------------------------------------------------------
-// Requires SLC3_2.sv
-//`include "SLC3_2.sv"
-
 import SLC3_2::*;
 
 module memory_parser;
