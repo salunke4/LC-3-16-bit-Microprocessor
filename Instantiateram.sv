@@ -1,17 +1,3 @@
-//------------------------------------------------------------------------------
-// Company: 		 UIUC ECE Dept.
-// Engineer:		 Xinying Wang
-//
-// Create Date:    
-// Design Name:    ECE 385 instantiate on-chip memory
-// Module Name:    SLC3
-//
-// Comments:
-//    Created 06-07-2020 
-//    
-
-//------------------------------------------------------------------------------
-
 `include "SLC3_2.sv"
 import SLC3_2::*;
 
