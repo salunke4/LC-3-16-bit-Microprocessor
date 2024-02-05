@@ -1,9 +1,3 @@
-// This debouncer is based on the class discussion and the circuit diagram at
-// http://eewiki.net/pages/viewpage.action?pageId=4980758
-//
-// The VHDL code provided on that page was not considered or converted.
-
-//synchronizer with no reset (for switches/buttons)
 module sync (
 	input Clk, d, 
 	output logic q
