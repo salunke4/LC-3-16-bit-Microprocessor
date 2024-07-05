@@ -1,1 +1,1 @@
-An LC-3 microcontroller implemented it on an FPGA
+An LC-3 microcontroller implemented on an FPGA
